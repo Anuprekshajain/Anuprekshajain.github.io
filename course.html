@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Portfolio</title>
+<head>
+<style >
+html,body {
+    background: url('img/b3.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+#text {
+     margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    padding:10px;
+}
+h1 {
+    color:red;
+    text-align:center;
+    font:italic bold 40px/80px Georgia, serif;
+}
+h2 {
+    color:brown;
+    text-align:center;
+    font:italic bold 40px/80px Georgia, serif;
+}
+ul,p{
+   font:italic bold 22px/37px Georgia, serif;
+}
+.panel{
+   font:italic bold 20px/50px Georgia, serif;
+}
+button.accordion {
+    background-color: #ff99cc;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border-style:solid;
+    text-align: left;
+    outline:none;
+    font-style:italic;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.next{
+    background-color: red;
+    color :white;
+    bottom:20px;
+    z-index:99;
+    cursor:pointer;
+    border-radius:10px;
+    position:fixed;
+    padding: 10px;
+    text-decoration: none;
+}
+.next a{
+    display:block;
+}
+.next a:hover{
+    background-color: #555;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    padding-left: 5px;
+    border-radius: 5px;
+
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 60%;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+@media screen and (max-width: 450px){
+.card1{
+    width:100%;
+}
+ul,p{font-size: 18px;}
+}
+</style>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <a href="abo.html">About</a>
+  <a href="skill.html">Skills</a>
+  <a href="course.html">Courses</a>
+  <a href="#projects">Projects</a>
+  <a href="contact.html">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<div id="text">
+<h1>Courses and Certifications</h1>
+<ul style="list-style-type:disc">
+<div class="card">
+<li><img src="img/Udemy.png" width="80px" height="80px"><p>Udemy</p></li>
+<ol type="1">
+<li>Become an android developer from scratch</li>
+<a href="https://www.udemy.com/certificate/UC-V0Z7BFDF/">View Certificate</a>
+<li>Android development for newbies</li>
+<a href="https://www.udemy.com/certificate/UC-FLOGF6A5/">View Certificate</a>
+<li>Java tutorial for beginners</li>
+<a href="https://www.udemy.com/certificate/UC-6S7HP3FB/">View Certificate</a>
+</ol>
+</div>
+<div class="card">
+<li><img src="img/Udacity.png" width="100px" height="80px"><p>Udacity</p></li>
+<ol type="1">
+<li>2D Game development with libGDX</li>
+<p>This course explores how to use libGDX to make games that run anywhere from web browsers to mobile devices.</p>
+<li>Android basics: Networking</li>
+<p>This course teaches the basics of networking using android, and is a part of android basics nanodegree by google.</p>
+</ol>
+</div>
+<div class="card">
+<li><img src="img/sololearn.jpg" width="100px" height="80px"><p>Sololearn</p></li>
+<ol type="1">
+<li>Java Tutorial</li>
+<a href="https://www.sololearn.com/Certificate/1068-2647472/pdf/">View certificate</a>
+<li>C# Tutorial</li>
+<a href="https://www.sololearn.com/Certificate/1080-2647472/pdf/">View certificate</a>
+<li>PHP Tutorial</li>
+<a href="https://www.sololearn.com/Certificate/1059-2647472/pdf/">View certificate</a>
+<li>Python3 Tutorial</li>
+<a href="https://www.sololearn.com/Certificate/1073-2647472/pdf/">View certificate</a>
+<li>HTML Tutorial</li>
+<a href="https://www.sololearn.com/Certificate/1014-2647472/pdf/">View certificate</a>
+<li>CSS Tutorial</li>
+<a href="https://www.sololearn.com/Certificate/1023-2647472/pdf/">View certificate</a>
+<li>Javascript Tutorial</li>
+<a href="https://www.sololearn.com/Certificate/1024-2647472/pdf/">View certificate</a>
+<li>SQL Tutorial</li>
+<a href="https://www.sololearn.com/Certificate/1060-2647472/pdf/">View certificate</a>
+<li>JQuery Tutorial</li>
+<a href="https://www.sololearn.com/Certificate/1082-2647472/pdf/">View certificate</a>
+</ol>
+</div>
+</ul>
+<div id="projects">
+<h2>Projects</h2>
+<button class="accordion">Let's chat</button>
+<div class="panel">
+  <p>Let's chat is an android group chatting app.<br>IDE used<ul style="list-style-type:disc">
+  <li>Android studio</li>
+  </ul>
+  Languages used<ul style="list-style-type:disc">
+  <li>Java</li>
+  <li>XML</li></ul>Server side<ul style="list-style-type: disc">
+  <li>Firebase</li></ul>Project link: <a href="https://github.com/Anuprekshajain/let-us-chat"> View Project</a>
+  </p>
+</div>
+
+<button class="accordion">Barcode Scanner</button>
+<div class="panel">
+  <p>Barcode Scanner is an android app which helps in scanning 1d and 2d barcode using ZXing library.<br>IDE used<ul style="list-style-type:disc">
+  <li>Android studio</li>
+  </ul>
+  Languages used<ul style="list-style-type:disc">
+  <li>Java</li>
+  <li>XML</li></ul>Project link: <a href="https://github.com/Anuprekshajain/Barcode-Scanner"> View Project</a>
+  </p>
+</div>
+
+<button class="accordion">Tic-tac-toe</button>
+<div class="panel">
+  <p>Tic-tac-toe is an android game app which allows the user to play tic tac toe game. App has two modes: Single player mode and Two player mode.<br>IDE used<ul style="list-style-type:disc">
+  <li>Android studio</li>
+  </ul>
+  Languages used<ul style="list-style-type:disc">
+  <li>Java</li>
+  <li>XML</li></ul>Algorithm used:<ul style="list-style-type:disc">
+  <li>Minmax Algorithm</li>
+  </ul>Project link: <a href="https://github.com/Anuprekshajain/Tic-tac-toe"> View Project</a></p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  }
+}
+</script>
+</div>
+</div>
+<a href="contact.html" class="next">Contact &raquo;</a>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</head>
+</html>

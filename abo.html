@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Portfolio</title>
+<head>
+<style >
+html,body {
+    background: url('img/b6.png') no-repeat center fixed;
+  background-size: cover;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {display:none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+
+#text {
+     margin-top: 30px;
+margin-right: 30px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+h1 {
+    color:red;
+    text-align:center;
+    font:italic bold 40px/80px Georgia, serif;
+}
+p,ul {
+    color:#336600;
+    font:italic bold 20px/50px Georgia, serif;
+}
+h2{
+ color:blue;
+    text-align:center;
+    font:italic bold 40px/80px Georgia, serif;
+}
+h3{
+    color:brown;
+    text-align:center;
+    font:italic bold 40px/80px Georgia, serif;
+}
+button.accordion {
+    background-color: #ffbf80;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border-style:solid;
+    text-align: left;
+    outline:none;
+    font-style:italic;
+    font-size: 20px;
+    transition: 0.4s;
+
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.next{
+    background-color: brown;
+    color :white;
+    z-index:99;
+    text-decoration: none;
+    position:fixed;
+    bottom:15px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.next a{
+    text-decoration:none;
+    display:inline-block;
+
+
+}
+.next a:hover{
+    background-color: #555;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    padding-left: 5px;
+    border-radius: 5px;
+    background-color: #ffffcc;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    max-width: 100%;
+    padding-right: 5px;
+    border-radius: 5px;
+    background-color: #ffffcc;
+}
+
+.card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+@media screen and (max-width: 450px) {
+.card1{width:100%;}
+ p{font-size: 16px;}
+}
+</style>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <a href="abo.html">About</a>
+  <a href="skill.html">Skills</a>
+  <a href="course.html">Courses</a>
+   <a href="course.html#projects">Projects</a>
+  <a href="contact.html">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<div class="container-fluid">
+<div id="text">
+<h1>About me</h1>
+<div class=card>
+<p>I am a third year undergraduate at department of computer science and Engineering in JSS Academy of technical education Noida. I am an autodidact programmer and a tech enthusiast. Presently, I am working on mobile app development and web development. I am also very passionate about machine learning.
+In these three years of my graduation in JSS, I had learnt a lot of languages like Java, C,  C#, HTML and CSS. I enjoy making websites, apps on Android Studio and games on Unity. You can check my skill set and projects on next page. Here is the link to my github profile: <a href="https://github.com/Anuprekshajain">Github link</a>
+</p>
+</div>
+<h2>Education</h2>
+<button class="accordion">JSS Academy of Technical Education Noida<br>B.Tech (Computer Science and Engineering)<br>2015-2019</button>
+<div class="panel">
+  <p>I am pursuing my b.tech in computer science and engineering from JSSATE Noida. During my three years in the college, I learnt about various subjects like data structures, OS, Threory of automata and formal languages etc.</p>
+</div>
+
+<button class="accordion">LAS Educational Academy<br>Class XII</button>
+<div class="panel">
+  <p>I completed my class XII from LAS Educational Academy. I studied Mathematics, Physics, Chemistry, English, Physical and Health Education in class XII.</p>
+</div>
+
+<button class="accordion">St. Mary's Senior Secondary School<br>Class X</button>
+<div class="panel">
+  <p>I completed my Class X from St. Mary's School Bijnor with an aggregate of 94.6%.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  }
+}
+</script>
+<div class="card1">
+<h3>Languages</h3>
+
+<ul style="list-style-type:disc">
+  <li>English</li>
+  <p>Native or Bilingual Proficiency</p>
+  <li>Hindi</li>
+  <p>Native or Bilingual Proficiency</p>
+  </ul>
+  </div>
+   <div class="card1">
+  <h3>Hobbies</h3>
+  <ul style="list-style-type:disc">
+  <li>Coding</li>
+  <li>Reading Novels</li>
+  <li>Quora</li>
+  </ul>
+  </div>
+
+</div>
+</div>
+<a href="skill.html" class="next">Skills &raquo;</a>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</head>
+</html>
