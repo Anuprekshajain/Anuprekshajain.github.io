@@ -17,6 +17,7 @@ html,body {
        -moz-background-size: cover;
          -o-background-size: cover;
   background-size: cover;
+
 }
 .topnav {
   overflow: hidden;
@@ -79,7 +80,12 @@ html,body {
  .text{margin-top:15px;font:italic bold 20px/30px Georgia, serif;}
  .text img{width:80px;height:80px;}
 }
-
+@media screen and (max-height: 600px){
+  html,body {
+    background: url('img/b1.png') no-repeat center fixed;
+  background-size: cover;
+}
+}
 .text img{border-radius: 50%;
 }
 </style>
