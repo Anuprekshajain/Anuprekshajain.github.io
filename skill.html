@@ -3,19 +3,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width ,initial-scale=1.0" >
+<meta name="viewport" content="width=device-width , initial-scale=0.3" >
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <title>Portfolio</title>
 <style>
-
-
-body,html {
-   background: url('img/b5.jpg') no-repeat center fixed;
-  background-size: cover;
-
-}
 .sidenav {
     height: 100%;
     width: 0;
@@ -400,30 +393,33 @@ function closeNav() {
                     </div>
                 </div>
             </li>
+             <li id="dphp">
+                <div class="top">
+                     <img src="img/sql.png" alt="SQL" width="50px" height="50px" />
+                </div>
+                <div class="bottom">
+                    <div class="infobox">
+                        <h3>SQL</h3>
+                        <p>Beginner</p>
+                    </div>
+                </div>
+            </li>
+            <li id="djs">
+                <div class="top">
+                     <img src="img/jquery.png" alt="JQuery" width="50px" height="50px" />
+                </div>
+                <div class="bottom">
+                    <div class="infobox">
+                        <h3>JQuery</h3>
+                        <p>Beginner</p>
+                    </div>
+                </div>
+            </li>
         </ul>
 
     </div>
 
     </div>
-<a href="course.html" class="next">Course &raquo;</a>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<script>
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-</script>
 </body>
 </html>
