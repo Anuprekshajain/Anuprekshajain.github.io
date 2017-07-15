@@ -2,10 +2,10 @@
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<title>Portfolio</title>
+<title>Anupreksha Jain</title>
 <head>
 <style >
 #courses{
@@ -16,60 +16,54 @@
    background: url('img/b4.jpg') no-repeat center fixed;
   background-size: cover;
 }
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float:left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: white;
-  color: black;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
     top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
     display: block;
-    text-align: left;
-  }
-
+    transition: 0.3s;
 }
-#projects {
 
-    padding:10px;
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
 }
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
 #courses {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
+#projects {
+    transition:margin-left .5s;
     padding:10px;
 }
+
 h1 {
     color:red;
     text-align:center;
@@ -187,29 +181,39 @@ ul,p{font-size: 18px;}
 </style>
 </head>
 <body>
-<div class="topnav" id="myTopnav">
+<div class="sidenav" id="mySidenav">
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
   <a href="index.html">Home</a>
   <a href="abo.html">About</a>
   <a href="skill.html">Skills</a>
   <a href="course.html">Courses</a>
   <a href="#projects">Projects</a>
   <a href="contact.html">Contact</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
 </div>
 
+<div id="courses">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+
 <script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("courses").style.marginLeft = "250px";
+     document.getElementById("projects").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("courses").style.marginLeft= "0";
+    document.getElementById("projects").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
 }
 </script>
 
 
-<div id="courses">
 <h1>Courses and Certifications</h1>
 <ul style="list-style-type:disc">
 <div class="card">
