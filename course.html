@@ -8,8 +8,12 @@
 <title>Portfolio</title>
 <head>
 <style >
-html,body {
+#courses{
     background: url('img/b3.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+#projects{
+   background: url('img/b4.jpg') no-repeat center fixed;
   background-size: cover;
 }
 .topnav {
@@ -58,11 +62,12 @@ html,body {
   }
 
 }
-#text {
-     margin-top: 20px;
-    margin-right: 30px;
-    margin-bottom: 50px;
-    margin-left: 10px;
+#projects {
+
+    padding:10px;
+}
+#courses {
+
     padding:10px;
 }
 h1 {
@@ -82,7 +87,7 @@ ul,p{
    font:italic bold 20px/50px Georgia, serif;
 }
 button.accordion {
-    background-color: #ff99cc;
+    background-color: #ffcc99;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -202,7 +207,8 @@ function myFunction() {
 }
 </script>
 
-<div id="text">
+
+<div id="courses">
 <h1>Courses and Certifications</h1>
 <ul style="list-style-type:disc">
 <div class="card">
@@ -249,8 +255,40 @@ function myFunction() {
 </ol>
 </div>
 </ul>
+</div>
 <div id="projects">
 <h2>Projects</h2>
+<button class="accordion">Tower defense game</button>
+<div class="panel">
+  <p>Tower defense game is a 3d game application for desktop, Mac, PC, android and other mobile devices<br>Game engine used :<ul style="list-style-type:disc">
+  <li>Unity</li>
+  </ul>
+  Language used :<ul style="list-style-type:disc">
+  <li>C#</li>
+ </ul>Project link: <a href="https://github.com/Anuprekshajain/Flappy_bird"> View Project</a>
+  </p>
+</div>
+<button class="accordion">Flappy bird</button>
+<div class="panel">
+  <p>Flappy bird is a game application for desktop, Mac, PC, android and other mobile devices<br>Game engine used :<ul style="list-style-type:disc">
+  <li>Unity</li>
+  </ul>
+  Language used :<ul style="list-style-type:disc">
+  <li>C#</li>
+ </ul>Project link: <a href="https://github.com/Anuprekshajain/Flappy_bird"> View Project</a>
+  </p>
+</div>
+<button class="accordion">Minesweeper</button>
+<div class="panel">
+  <p>Minesweeper is a game app for desktop, Mac, PC, android and other mobile devices<br>Game engine used :<ul style="list-style-type:disc">
+  <li>Unity</li>
+  </ul>
+  Language used :<ul style="list-style-type:disc">
+  <li>C#</li>
+ </ul>Algorithm used :<ul style="list-style-type: disc">
+  <li>Floodfill Algorithm</li></ul>Project link: <a href="https://github.com/Anuprekshajain/Minesweeper"> View Project</a>
+  </p>
+</div>
 <button class="accordion">Let's chat</button>
 <div class="panel">
   <p>Let's chat is an android group chatting app.<br>IDE used<ul style="list-style-type:disc">
@@ -260,6 +298,16 @@ function myFunction() {
   <li>Java</li>
   <li>XML</li></ul>Server side<ul style="list-style-type: disc">
   <li>Firebase</li></ul>Project link: <a href="https://github.com/Anuprekshajain/let-us-chat"> View Project</a>
+  </p>
+</div>
+<button class="accordion">Roll the ball</button>
+<div class="panel">
+  <p>Roll the ball is a simple game that runs on desktop, mac ,PC and all mobile devices<br>Game engine used<ul style="list-style-type:disc">
+  <li>Unity</li>
+  </ul>
+  Language used<ul style="list-style-type:disc">
+  <li>C#</li>
+  </ul>Project link: <a href="https://github.com/Anuprekshajain/roll-the-ball"> View Project</a>
   </p>
 </div>
 
@@ -302,7 +350,6 @@ for (i = 0; i < acc.length; i++) {
   }
 }
 </script>
-</div>
 </div>
 <a href="contact.html" class="next">Contact &raquo;</a>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>

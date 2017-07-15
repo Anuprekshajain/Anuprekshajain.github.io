@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -59,11 +59,9 @@
 }
 ul,ol,li,h1,h2,h3,h4,h5,h6,pre,body,p,fieldset,input{margin:0; padding:0;}
 body {
- background: -moz-radial-gradient(#364D58,#000);
-  background: -webkit-gradient(radial, center center,10,center center,1000, from(#364D58), to(#000));
-  color:#555;
    background: url('img/b5.jpg') no-repeat center fixed;
   background-size: cover;
+  height:100%;
 }
 h1 {
  font: bold 50px Helvetica, Arial, Sans-serif;
@@ -192,7 +190,7 @@ text-shadow: none;}
     background:-webkit-gradient(linear, 0 top, 0 bottom, from(#1a6c90), to(#14506b)); }
 
 #dc div.top { z-index:91; }
-#dc div.bottom { z-index:90; height:120px; }
+#dc div.bottom { z-index:90; height:140px; }
 #dc:hover div.top { z-index:993; background-color:#1f81ac; margin-left:250px; }
 #dc:hover div.bottom { z-index:992; background-color:#1a6c90; width:290px;
     background:-moz-linear-gradient(-90deg, #1a6c90, #14506b);
@@ -200,15 +198,15 @@ text-shadow: none;}
 
 
 #dcs div.top { z-index:91; }
-#dcs div.bottom { z-index:90; height:140px; }
-#dcs:hover div.top { z-index:991; background-color:#3f1150; margin-left:250px; }
-#dcs:hover div.bottom { z-index:990; background-color:#340e43; width:290px;
+#dcs div.bottom { z-index:90; height:160px; }
+#dcs:hover div.top { z-index:991; background-color:#3f1150; margin-left:300px; }
+#dcs:hover div.bottom { z-index:990; background-color:#340e43; width:340px;
     background:-moz-linear-gradient(-90deg, #340e43, #1a0721);
      background:-webkit-gradient(linear, 0 top, 0 bottom, from(#340e43), to(#1a0721)); }
 #dunity div.top { z-index:89; }
-#dunity div.bottom { z-index:88; height:160px; }
-#dunity:hover div.top { z-index:989; background-color:#1f81ac; margin-left:160px; }
-#dunity:hover div.bottom { z-index:988; background-color:#1a6c90; width:200px;
+#dunity div.bottom { z-index:88; height:120px; }
+#dunity:hover div.top { z-index:989; background-color:#1f81ac; margin-left:250px; }
+#dunity:hover div.bottom { z-index:988; background-color:#1a6c90; width:290px;
     background:-moz-linear-gradient(-90deg, #1a6c90, #14506b);
     background:-webkit-gradient(linear, 0 top, 0 bottom, from(#1a6c90), to(#14506b)); }
 #dphp div.top { z-index:87; }
@@ -222,29 +220,7 @@ text-shadow: none;}
 #djs:hover div.top { z-index:985; background-color:#d98f23; margin-left:110px; }
 #djs:hover div.bottom { z-index:984; background-color:#b6781e; width:150px;
     background:-moz-linear-gradient(-90deg, #b6781e, #916018); background:-webkit-gradient(linear, 0 top, 0 bottom, from(#b6781e), to(#916018)); }
-    @media screen and(max-width: 450px){
-   #das:hover div.top{margin-left:60px;}
-     #das:hover div.bottom{width:100px;}
-     #djava:hover div.top
-     {margin-left:90px;}
-     #djava:hover div.bottom{width:130px;}
 
-     #dhtml:hover div.top
-     {margin-left:60px;}
-     #dhtml:hover div.bottom{width:100px;}
-
-     #dcss:hover div.top
-     {margin-left:60px;}
-     #dcss:hover div.bottom{width:100px;}
-
-     #dcs:hover div.top
-     {margin-left:60px;}
-     #dcs:hover div.bottom{width:100px;}
-
-    #dc:hover div.top
-     {margin-left:60px;}
-     #dc:hover div.bottom{width:100px;}
-    }
      .next{
     background-color: brown;
     color :white;
@@ -281,7 +257,7 @@ text-shadow: none;}
 </style>
 <body>
 <div class="topnav" id="myTopnav">
-  <a href="home.html">Home</a>
+  <a href="index.html">Home</a>
   <a href="abo.html">About</a>
   <a href="skill.html">Skills</a>
   <a href="course.html">Courses</a>
@@ -349,6 +325,17 @@ function myFunction() {
                     </div>
                 </div>
             </li>
+              <li id="dunity">
+                <div class="top">
+                    <img src="img/unity.jpg" alt="Unity" width="50px" height="50px" />
+                </div>
+                <div class="bottom">
+                    <div class="infobox">
+                        <h3>Unity</h3>
+                        <p>Advanced</p>
+                    </div>
+                </div>
+            </li>
             <li id="dc">
                 <div class="top">
                     <img src="img/c.png" alt="C" width="50px" height="50px" />
@@ -372,17 +359,7 @@ function myFunction() {
                     </div>
                 </div>
             </li>
-            <li id="dunity">
-                <div class="top">
-                    <img src="img/unity.jpg" alt="Unity" width="50px" height="50px" />
-                </div>
-                <div class="bottom">
-                    <div class="infobox">
-                        <h3>Unity</h3>
-                        <p>Intermediate</p>
-                    </div>
-                </div>
-            </li>
+
             <li id="dphp">
                 <div class="top">
                      <img src="img/php.png" alt="PHP" width="50px" height="50px" />
