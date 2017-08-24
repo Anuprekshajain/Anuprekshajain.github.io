@@ -2,192 +2,11 @@
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/abo.css">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <title>Anupreksha Jain</title>
-<head>
-<style >
-html,body {
-    background: url('img/b6.jpg') no-repeat center fixed;
-  background-size: cover;
-}
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#text {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-#text {
-     margin-top: 30px;
-margin-right: 30px;
-    margin-bottom: 50px;
-    margin-left: 30px;
-}
-h1 {
-    color:red;
-    text-align:center;
-    font:italic bold 40px/80px Georgia, serif;
-}
-p,ul {
-    color:#336600;
-    font:italic bold 20px/50px Georgia, serif;
-}
-h2{
- color:blue;
-    text-align:center;
-    font:italic bold 40px/80px Georgia, serif;
-}
-h3{
-    color:brown;
-    text-align:center;
-    font:italic bold 40px/80px Georgia, serif;
-}
-button.accordion {
-    background-color: #ff99cc;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border-style:solid;
-    text-align: left;
-    outline:none;
-    font-style:italic;
-    font-size: 20px;
-    transition: 0.4s;
-
-}
-
-button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
-
-}
-
-button.accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-
-button.accordion.active:after {
-    content: "\2212";
-
-}
-
-div.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-.next{
-    background-color: brown;
-    color :white;
-    z-index:99;
-    text-decoration: none;
-    position:fixed;
-    bottom:15px;
-    border-radius: 10px;
-    padding: 10px;
-}
-.next a{
-    text-decoration:none;
-    display:inline-block;
-
-
-}
-.next a:hover{
-    background-color: #555;
-}
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: brown;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-}
-
-#myBtn:hover {
-  background-color: #555;
-}
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 100%;
-    padding-left: 5px;
-    border-radius: 5px;
-background-color: white;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.card1 {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 40%;
-    max-width: 100%;
-    padding-right: 5px;
-    border-radius: 5px;
-background-color:white;
-}
-
-.card1:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-@media screen and (max-width: 450px) {
-.card1{width:100%;}
- p{font-size: 16px;}
-}
-</style>
+  <head><title>Anupreksha Jain</title>
 </head>
 <body>
 <div class="sidenav" id="mySidenav">
@@ -217,27 +36,85 @@ function closeNav() {
 
 }
 </script>
+<div class="container-fluid">
 <h1>About me</h1>
 <div class=card>
 <p>I am a third year undergraduate at department of computer science and Engineering in JSS Academy of technical education Noida. I am an autodidact programmer and a tech enthusiast. Presently, I am working on mobile app development and web development. I am also very passionate about machine learning.
 In these three years of my graduation in JSS, I had learnt a lot of languages like Java, C,  C#, HTML and CSS. I enjoy making websites, apps on Android Studio and games on Unity. You can check my skill set and projects on next page. Here is the link to my github profile: <a href="https://github.com/Anuprekshajain">Github link</a>
 </p>
 </div>
+
 <h2>Education</h2>
-<button class="accordion">JSS Academy of Technical Education Noida<br>B.Tech (Computer Science and Engineering)<br>2015-2019</button>
+<div class="row">
+<div class="col-sm-1 col-xs-1">
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+</div>
+<div class="col-sm-10 col-xs-10">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+ <button class="accordion">JSS Academy of Technical Education Noida<br>B.Tech (Computer Science and Engineering)<br>2015-2019</button>
 <div class="panel">
   <p>I am pursuing my b.tech in computer science and engineering from JSSATE Noida. During my three years in the college, I learnt about various subjects like data structures, OS, Threory of automata and formal languages etc.</p>
 </div>
+</div>
 
-<button class="accordion">LAS Educational Academy<br>Class XII</button>
+<div class="mySlides fade">
+ <button class="accordion">LAS Educational Academy<br>Class XII</button>
 <div class="panel">
   <p>I completed my class XII from LAS Educational Academy. I studied Mathematics, Physics, Chemistry, English, Physical and Health Education in class XII.</p>
 </div>
+</div>
 
-<button class="accordion">St. Mary's Senior Secondary School<br>Class X</button>
+<div class="mySlides fade">
+  <button class="accordion">St. Mary's Senior Secondary School<br>Class X</button>
 <div class="panel">
   <p>I completed my Class X from St. Mary's School Bijnor with an aggregate of 94.6%.</p>
 </div>
+</div>
+</div>
+</div>
+<div class="col-sm-1 col-xs-1">
+<a class="nexts" onclick="plusSlides(1)">&#10095;</a>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
 
 <script>
 var acc = document.getElementsByClassName("accordion");
@@ -255,6 +132,8 @@ for (i = 0; i < acc.length; i++) {
   }
 }
 </script>
+<div class="row">
+<div class="col-sm-6">
 <div class="card1">
 <h3>Languages</h3>
 
@@ -265,7 +144,9 @@ for (i = 0; i < acc.length; i++) {
   <p>Native or Bilingual Proficiency</p>
   </ul>
   </div>
-   <div class="card1">
+  </div>
+  <div class="col-sm-6">
+   <div class="card2">
   <h3>Hobbies</h3>
   <ul style="list-style-type:disc">
   <li>Coding</li>
@@ -273,7 +154,8 @@ for (i = 0; i < acc.length; i++) {
   <li>Quora</li>
   </ul>
   </div>
-
+  </div>
+</div>
 </div>
 <a href="skill.html" class="next">Skills &raquo;</a>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
