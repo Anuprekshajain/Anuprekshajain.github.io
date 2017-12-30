@@ -192,8 +192,8 @@ text-shadow: none;}
     background:-webkit-gradient(linear, 0 top, 0 bottom, from(#1a6c90), to(#14506b)); }
 #dphp div.top { z-index:87; }
 #dphp div.bottom { z-index:86; height:180px; }
-#dphp:hover div.top { z-index:987; background-color:#3f1150; margin-left:110px; }
-#dphp:hover div.bottom { z-index:986; background-color:#340e43; width:150px;
+#dphp:hover div.top { z-index:987; background-color:#3f1150; margin-left:300px; }
+#dphp:hover div.bottom { z-index:986; background-color:#340e43; width:340px;
     background:-moz-linear-gradient(-90deg, #340e43, #1a0721);
     background:-webkit-gradient(linear, 0 top, 0 bottom, from(#340e43), to(#1a0721)); }
 #djs div.top { z-index:85; }
