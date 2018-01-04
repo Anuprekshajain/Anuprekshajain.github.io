@@ -56,10 +56,13 @@ body{
 @media screen and (max-width: 600px){
  p{ font:italic bold 18px/30px Georgia, serif;}
  marquee{width:60%;}
- /*body {
-    background: url('../img/back3.jpg') no-repeat center fixed;
+  marquee{width:70%;}
+ .text{margin-top:100px;font:italic bold 20px/30px Georgia, serif;}
+ .text img{width:80px;height:80px;}
+ body {
+    background: url('../img/mobile.png') no-repeat center fixed;
   background-size:contain;
-}*/
+}
 }
 .text{
   margin-top: 70px;
@@ -70,12 +73,12 @@ body{
 @media screen and (max-height: 600px){
  p{ font:italic bold 18px/30px Georgia, serif;}
  marquee{width:70%;}
- .text{margin-top:60px;font:italic bold 20px/30px Georgia, serif;}
+ .text{margin-top:100px;font:italic bold 20px/30px Georgia, serif;}
  .text img{width:80px;height:80px;}
- /*html,body {
-    background-image: url('../img/bh.jpg') ;
+ body {
+    background-image: url('../img/mobile.png') ;
   background-size: cover;
-}*/
+}
 }
 .text img{border-radius: 50%;
 }
