@@ -3,9 +3,6 @@ html,body {
     background-position: center center;
     height:100%;
     background-repeat: no-repeat;
-      -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
   background-size: cover;
 
 }
@@ -58,8 +55,8 @@ html,body {
  p{ font:italic bold 18px/30px Georgia, serif;}
  marquee{width:60%;}
  html,body {
-    background: url('../img/bh.jpg') no-repeat center fixed;
-  background-size: cover;
+    background: url('../img/back3.jpg') no-repeat center fixed;
+  background-size:contain;
 }
 }
 .text{
