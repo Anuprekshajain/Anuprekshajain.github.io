@@ -73,7 +73,7 @@ body{
 @media screen and (max-height: 600px){
  p{ font:italic bold 16px/30px Georgia, serif;
   color:#ffd9b3;}
- marquee{width:60%;}
+ marquee{width:55%;}
  .text{margin-top:100px;font:italic bold 20px/30px Georgia, serif;}
  .text img{width:80px;height:80px;}
  body {
