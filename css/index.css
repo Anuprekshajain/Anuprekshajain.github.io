@@ -1,10 +1,12 @@
 html,body {
-    background: url('../img/back3.jpg');
-    background-position: center center;
     height:100%;
+}
+body{
+  background: url('../img/back3.jpg');
+    background-position: center center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
   background-size: cover;
-
 }
 .sidenav {
     height: 100%;
@@ -54,10 +56,10 @@ html,body {
 @media screen and (max-width: 600px){
  p{ font:italic bold 18px/30px Georgia, serif;}
  marquee{width:60%;}
- html,body {
+ /*body {
     background: url('../img/back3.jpg') no-repeat center fixed;
   background-size:contain;
-}
+}*/
 }
 .text{
   margin-top: 70px;
