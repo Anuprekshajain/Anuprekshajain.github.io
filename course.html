@@ -45,7 +45,7 @@ function closeNav() {
 
 <div class="container-fluid">
 <div class="page-header">
-<h1>Courses and Certifications</h1></div>
+<h1>Trainings</h1></div>
 <ul style="list-style-type:disc">
 <div class="card">
 <li><img src="img/Udemy.PNG" width="80px" height="80px"><p>Udemy</p></li>
@@ -68,37 +68,38 @@ function closeNav() {
 </ol>
 </div>
 <div class="card">
-<li><img src="img/sololearn.jpg" width="100px" height="80px"><p>Sololearn</p></li>
+<li><img src="img/datacamp.png" width="100px" height="80px"><p>Datacamp</p></li>
 <ol type="1">
-<li>Java Tutorial</li>
-<a href="https://www.sololearn.com/Certificate/1068-2647472/pdf/">View certificate</a>
-<li>C# Tutorial</li>
-<a href="https://www.sololearn.com/Certificate/1080-2647472/pdf/">View certificate</a>
-<li>PHP Tutorial</li>
-<a href="https://www.sololearn.com/Certificate/1059-2647472/pdf/">View certificate</a>
-<li>Python3 Tutorial</li>
-<a href="https://www.sololearn.com/Certificate/1073-2647472/pdf/">View certificate</a>
-<li>HTML Tutorial</li>
-<a href="https://www.sololearn.com/Certificate/1014-2647472/pdf/">View certificate</a>
-<li>CSS Tutorial</li>
-<a href="https://www.sololearn.com/Certificate/1023-2647472/pdf/">View certificate</a>
-<li>Javascript Tutorial</li>
-<a href="https://www.sololearn.com/Certificate/1024-2647472/pdf/">View certificate</a>
-<li>SQL Tutorial</li>
-<a href="https://www.sololearn.com/Certificate/1060-2647472/pdf/">View certificate</a>
-<li>JQuery Tutorial</li>
-<a href="https://www.sololearn.com/Certificate/1082-2647472/pdf/">View certificate</a>
+<li>Introduction to R</li>
+<a href="https://www.datacamp.com/statement-of-accomplishment/course/b9b3454107d5984b14038b4f38105872e3caf76f">View certificate</a>
+<li>Intro to statistics with R</li>
+<a href=https://www.datacamp.com/statement-of-accomplishment/course/ecf298d159b4f2d51806d008e2d98822fb539069>View certificate</a>
+<li>Intro to SQL for Data Science</li>
+<a href="https://www.datacamp.com/statement-of-accomplishment/course/8d228b3f44c2f8bef504dafb099acbee21b2986e">View certificate</a>
+<li>Intro to Python for Dta Science</li>
+<a href="https://www.datacamp.com/statement-of-accomplishment/course/1d3465c80ed520e282c4c3ffff06cbbed914636c">View certificate</a>
 </ol>
 </div>
 </ul>
 </div>
 <div id="projects">
 <h2>Projects</h2>
-<div id="curtain_buttons">
- <input type="button" value="View Projects" onclick="open_curtain();">
- <input type="button" value="Close" onclick="close_curtain();">
-</div>
 <div id="effect">
+
+  <button class="accordion">Messages</button>
+<div class="panel">
+  <p>Messages is an android app which allows the user to sign up , login into their account , update profile, send and recieve messages.<br>IDE used<ul style="list-style-type:disc">
+  <li>Android studio</li>
+  </ul>
+  Languages used<ul style="list-style-type:disc">
+  <li>Java</li>
+  <li>XML</li></ul>Backend:<ul style="list-style-type:disc">
+  <li>PHP Rest Api(Slim Framework)</li>
+  <li>Databse:<li>MYSQL</li>
+  </ul>Project link: <a href="https://github.com/Anuprekshajain/Messages"> View Project</a>
+  </p>
+</div>
+
 <button class="accordion">Bloodbank</button>
 <div class="panel">
   <p>Online blood bank is a website aimed at bridging the gap between blood donors and recievers. Users need to signup or login to their user account in order to register as a donor or search donors. Users can also edit their profile.<br>
@@ -137,9 +138,9 @@ Databse :<ul style="list-style-type:disc">
 2. Convert speech to text<br>
 3. Check pronounciation(Speech to text)<br>
 4. Check weather<br>
-5. Crop an image and save it<br>
+5. Check direction(using Compass sensors)<br>
 6. Read the current affairs<br>
-Above project includes use of various android concepts like using Asynctask , API , RecognizerIntent, using bitmap , saving and reading media from device.<br>IDE used<ul style="list-style-type:disc">
+<br>IDE used<ul style="list-style-type:disc">
   <li>Android studio</li>
   </ul>
   Languages used<ul style="list-style-type:disc">
@@ -147,19 +148,7 @@ Above project includes use of various android concepts like using Asynctask , AP
   <li>XML</li></ul>Project link: <a href="https://github.com/Anuprekshajain/Toolbox"> View Project</a>
   </p>
 </div>
-<button class="accordion">Contactbook</button>
-<div class="panel">
-  <p>Contactbook is a simple android app which allows the user to store contacts , read them , update them ,delete them.<br>IDE used<ul style="list-style-type:disc">
-  <li>Android studio</li>
-  </ul>
-  Languages used<ul style="list-style-type:disc">
-  <li>Java</li>
-  <li>XML</li></ul>Backend:<ul style="list-style-type:disc">
-  <li>PHP</li>
-  <li>Databse:<li>MYSQL</li>
-  </ul>Project link: <a href="https://github.com/Anuprekshajain/Contactbook"> View Project</a>
-  </p>
-</div>
+
 <button class="accordion">ShortNotes</button>
 <div class="panel">
   <p>ShortNotes is an android app which allow users to create notes , store them , edit them and delete them.<br>IDE used<ul style="list-style-type:disc">
@@ -184,23 +173,9 @@ Above project includes use of various android concepts like using Asynctask , AP
   <li>Minmax Algorithm</li>
   </ul>Project link: <a href="https://github.com/Anuprekshajain/Tic-tac-toe"> View Project</a></p>
 </div>
-<img src="img/blue.jpg" id="curtain1">
- <img src="img/blue.jpg" id="curtain2">
 </div>
 </div>
 </div>
-<script type="text/javascript">
-function open_curtain()
-{
- $("#curtain1").animate({width:20},1000);
- $("#curtain2").animate({width:20},1000);
-}
-function close_curtain()
-{
- $("#curtain1").animate({width:"50%"},1000);
- $("#curtain2").animate({width:"50%"},1000);
-}
-</script>
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
