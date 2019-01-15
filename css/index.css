@@ -71,8 +71,7 @@ height: 100%;
   #indexpage{
   background: url('../img/mobile_Frame.png');
    background-repeat: no-repeat;
-  background-size: contain;
-  margin-left: 15px;
+  background-size: cover;
 }
 #indexpage img{
     display: inline-block;
