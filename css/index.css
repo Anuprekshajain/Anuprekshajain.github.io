@@ -105,8 +105,12 @@ height: 100%;
 
 @media screen and (max-width: 600px) {
   /* Place the timelime to the left */
+  .tablet{
+    margin-left: -15px;
+    margin-top: -15px;
+  }
   .cardtab {
-    font-size: 12px;
+    font-size: 9px;
     left:7%;
    right: 7%;
    top:9%;
