@@ -73,6 +73,7 @@ height: 100%;
   background: url('../img/mobile_Frame.png');
    background-repeat: no-repeat;
   background-size: cover;
+  height:100%;
 }
 #indexpage img{
     display: inline-block;
@@ -105,7 +106,7 @@ height: 100%;
 @media screen and (max-width: 600px) {
   /* Place the timelime to the left */
   .cardtab {
-    font-size: 15px;
+    font-size: 12px;
     left:7%;
    right: 7%;
    top:9%;
