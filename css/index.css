@@ -116,12 +116,13 @@ background-position: center, center;
   .cardtab {
     font-size: 8px;
     left:7%;
-   right: 7%;
+   right: 3%;
    top:9%;
   }
 
 .tablet img{
   height:900px !important;
+  width:103% !important;
   }
 }
 
