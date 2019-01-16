@@ -70,7 +70,7 @@ height: 100%;
 }
 @media screen and (max-width: 600px) {
   #indexpage{
-  background: url('../img/mobile_Frame.png');
+  background: url('../img/mobile.jpg');
    background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -104,12 +104,16 @@ background-position: center, center;
    right: 10%;
    font-size: 18px;
 }
+.tablet img{
+  height: 750px;
+}
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 760px), screen and (max-height :760px) {
   /* Place the timelime to the left */
   .tablet{
     margin-left: -15px;
+    margin-right: -15px;
     margin-top: -15px;
   }
   .cardtab {
@@ -118,7 +122,11 @@ background-position: center, center;
    right: 7%;
    top:9%;
   }
+
+.tablet img{
+  height:900px;
   }
+}
 
 
 .imageouter {
