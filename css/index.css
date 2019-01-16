@@ -121,7 +121,7 @@ background-position: center, center;
   }
 
 .tablet img{
-  height:900px;
+  height:900px !important;
   }
 }
 
@@ -479,6 +479,7 @@ text-align: center;
   #content , #content2 {
   zoom:60%;
   }
+}
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
