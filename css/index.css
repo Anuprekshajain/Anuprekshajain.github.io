@@ -115,7 +115,7 @@ background-position: center, center;
 @media screen and (max-width: 600px), screen and (max-height :600px) {
   /* Place the timelime to the left */
   .cardtab {
-    font-size: 8px !important;
+    font-size: 7px !important;
     left:7%;
    right: 0% !important;
    top:9%;
