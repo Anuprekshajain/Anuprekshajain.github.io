@@ -481,8 +481,13 @@ text-align: center;
 
 @media screen and (max-width: 600px) {
   /* Place the timelime to the left */
-  #content , #content2 {
+  #content {
   zoom:60%;
+  -moz-transform: scale(0.6);
+  }
+  #content2{
+    zoom:50%;
+    -moz-transform: scale(0.5);
   }
 }
 
