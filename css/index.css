@@ -483,11 +483,11 @@ text-align: center;
   /* Place the timelime to the left */
   #content {
   zoom:60%;
-  -moz-transform: scale(0.6);
+  -moz-transform: scale(0.8);
   }
   #content2{
     zoom:50%;
-    -moz-transform: scale(0.5);
+    -moz-transform: scale(0.8);
   }
 }
 
